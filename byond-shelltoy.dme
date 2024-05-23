@@ -5,6 +5,8 @@
 // BEGIN_INTERNALS
 // END_INTERNALS
 
+#define DEBUG
+
 // BEGIN_FILE_DIR
 #define FILE_DIR .
 #define FILE_DIR "icon"
@@ -14,9 +16,13 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "tgs.dm"
 #include "map\testmap.dmm"
+#include "src\__debugger.dm"
+#include "src\_shelleo.dm"
 #include "src\basic-test-project.dm"
 #include "src\mob.dm"
 #include "src\turf.dm"
+#include "tgs\includes.dm"
 // END_INCLUDE
 
