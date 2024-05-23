@@ -24,6 +24,9 @@ var/global/client_count = 0
 	TgsNew()
 	TgsInitializationComplete()
 
+	while(TRUE)
+		sleep(1) // Keep at least one thread spinning so the debug server stays happy.
+
 /world/Reboot()
 	TgsReboot()
 	..()

@@ -29,8 +29,3 @@ var/datum/debugger/Debugger = new //Early start
 	if (debug_server)
 		call_ext(debug_server, "auxtools_shutdown")()
 	. = ..()
-
-/world/New()
-	. = ..()
-	while(TRUE)
-		sleep(1) // Keep at least one thread spinning so the debug server stays happy.
